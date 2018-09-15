@@ -3,6 +3,7 @@ package com.svjia.service;
 import com.svjia.common.ImpalaConnnection;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.codehaus.jettison.json.JSONObject;
 import org.springframework.stereotype.Service;
 
 import java.sql.Connection;
@@ -41,10 +42,7 @@ public class TestService {
     }
 
     public static void main(String[] args) throws Exception {
-        Map<String,String> resMap = new TestService().jdbcTest();
-        for(Map.Entry en : resMap.entrySet()){
-            System.out.println(en.getKey()+","+en.getValue());
-        }
+
 
     }
 }

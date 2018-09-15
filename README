@@ -1,0 +1,58 @@
+参数说明:
+    账号数:      account
+    人均产出:    avgout
+    建材客户:    building
+    部门线索池:  depart
+    装企客户:    firm
+    有意向客户:  intention
+    签单数:     order
+    其他客户:   others
+    客单价:     price
+    定制客户:   special
+    瓷砖客户:   tile
+    营业额:     turnover
+
+1.指标栏,将turnover更换为上述参数名即为对应的指标数据
+营业额:
+    1)数量查询
+        历史总量
+        http://10.101.205.8:8080/retailService/turnover/amount?type=
+        去年新增
+        http://10.101.205.8:8080/retailService/turnover/amount?type=year
+        上季度新增
+        http://10.101.205.8:8080/retailService/turnover/amount?type=quarter
+        上月新增
+        http://10.101.205.8:8080/retailService/turnover/amount?type=month
+        上周新增
+        http://10.101.205.8:8080/retailService/turnover/amount?type=week
+        昨日新增
+        http://10.101.205.8:8080/retailService/turnover/amount?type=day
+
+    2)同比环比
+        去年环比
+        http://10.101.205.8:8080/retailService/turnover/rate?type=year&rate=ringRate
+        去年同比
+        http://10.101.205.8:8080/retailService/turnover/rate?type=year&rate=yearRate
+
+        上季度环比
+        http://10.101.205.8:8080/retailService/turnover/rate?type=quarter&rate=ringRate
+        上季度同比
+        http://10.101.205.8:8080/retailService/turnover/rate?type=quarter&rate=yearRate
+
+        上月环比
+        http://10.101.205.8:8080/retailService/turnover/rate?type=month&rate=ringRate
+        上月同比
+        http://10.101.205.8:8080/retailService/turnover/rate?type=month&rate=yearRate
+
+        上周环比
+        http://10.101.205.8:8080/retailService/turnover/rate?type=week&rate=ringRate
+        上周同比
+        http://10.101.205.8:8080/retailService/turnover/rate?type=week&rate=yearRate
+
+        昨日环比
+        http://10.101.205.8:8080/retailService/turnover/rate?type=day&rate=ringRate
+        昨日同比
+        http://10.101.205.8:8080/retailService/turnover/rate?type=day&rate=yearRate
+
+
+
